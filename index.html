@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modal window</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myjs.js"></script>
+</head>
+<body>
+<?-- getbootstrap.com/docs/4.0/components/forms/ -->
+
+
+
+	 <div class="modal fade " id= "exampleModal" tabindex= "-1" role= "dialog" aria-labelledby= "exampleModal" area-hidden= "true"  margin= 0 >
+	 <div class="modal-dialog container  d-flex align-items-center justify-content-center " role= "document" >
+		 <div class="modal-content d-flex flex-column">
+		 
+			<div class="modal-header">
+				<h5 class="modal-title">Введите данные</h5>
+				<button class="close" type= "button" data-dismiss= "modal" >
+					<span area-hidden= "true" >&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+			<form class="form-control">
+				<div class="form-fgroup">
+					<label for="exampleInputName">Имя</label>
+					<input type="Text" class= "form-control" id= "exampleInputName" required>
+				</div>
+				<div class="form-fgroup">
+					<label for="exampleInputPhone">Телефон xxxx-xxx-xxxx</label>
+					<input type="Phone" class= "form-control" pattern="^\d{4}-\d{3}-\d{4}$"     placeholder= "xxxx-xxx-xxxx" id= "exampleInputPhone" required>
+					
+				</div>
+				<div class="form-fgroup">
+					<label for="exampleInputEmail">Email</label>
+					<input type="email" class= "form-control"  id= "exampleInputEmail1" aria-decribedby= "emailHelp"  required></div>
+				
+			</form>	
+			</div>
+			<div class="modal-footer" hidden="true">
+				<button class= "btn btn-primary" id = "bntsub"> Отправить </button>
+				        
+        
+        
+			</div>
+			
+		 </div>
+	 </div>
+	</div>
+	
+	<section class="h-100">
+	<div class="d-flex align-items-center justify-content-center h-100">
+	<div class="button">
+		<button class="btn btn-primary align-self-center p-2" 
+			 data-target="#exampleModal" data-delay= "5000" 
+			 <button data-delayed-toggle="collapse" 
+			type="button" name="button">Регистрация</button>
+	</div>
+	<div class="massage" hidden= "true" >
+		<div >Имя = <label id="name" ></label> </div>
+		<div >Телефон = <label id="phone" ></label></div>
+		<div >Email = <label id="email" ></label></div>
+		<div > <button class="rewrite" > Cбросить</button> </div>
+	
+	</div>	
+		
+		
+		
+	</div>
+</section>
+</body>
+</html>
