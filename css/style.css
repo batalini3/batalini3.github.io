@@ -1,0 +1,10 @@
+.center{
+	
+}
+html, body {
+  height: 100%;
+}
+.container, .row.justify-content-center.align-items-center {
+  height: 100%;
+  min-height: 100%;
+}
